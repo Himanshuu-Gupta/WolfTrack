@@ -35,5 +35,15 @@ body {
 .card-icons {
     font-size:80px;
     margin-top: 10px;
+    color: #16353F;
+}
+
+.sidenav-right,.sidenav-left {
+    color: black;
+    padding-top: 40pt;
+}
+
+.new-application-modal {
     color: black;
 }
+

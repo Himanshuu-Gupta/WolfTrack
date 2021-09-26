@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>WolfTrack - Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,11 +22,6 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-
   <link rel="stylesheet" href="../static/css/layout.css">
   <style>
 
@@ -38,7 +33,7 @@
     <ul class="navbar-nav ">
       <a class="navbar-brand" href="#">WolkTrack</a>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Profile</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -56,10 +51,44 @@
     <div class="row content">
 
       <!-- Left Sidebar -->
-      <div class="col-sm-3 sidenav">
-        <p><a href="#">Link</a></p>
-        <p><a href="#">Link</a></p>
-        <p><a href="#">Link</a></p>
+      <div class="col-sm-3 sidenav sidenav-left">
+        <center>
+          <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+            data-holder-rendered="true">
+
+          <br><br>
+
+          <div class="card" style="width: 18rem; text-align: left;">
+            <div class="card-body">
+              <h5 class="card-title">Jessica Holds</h5>
+              <div class="row">
+                <div class="col">
+                  <b>Gender</b>
+                </div>
+                <div class="col">
+                  Female
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <b>Location</b>
+                </div>
+                <div class="col">
+                  Raleigh, NC
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <br><br>
+
+
+
+        </center>
+
       </div>
 
       <!-- Content -->
@@ -77,8 +106,7 @@
                 <li class="list-group-item border-0">Vestibulum at eros</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
               </div>
             </div>
 
@@ -93,8 +121,7 @@
                 <li class="list-group-item border-0">Vestibulum at eros</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
               </div>
             </div>
           </div>
@@ -112,8 +139,7 @@
 
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
               </div>
             </div>
 
@@ -128,27 +154,70 @@
                 <li class="list-group-item border-0">Vestibulum at eros</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+
               </div>
             </div>
           </div>
 
+          <!-- Modal for New Application -->
+          <div class="modal fade new-application-modal" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">New Job Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="text-align: left;">
+                  <!-- Add new Application Modal code here -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
         </center>
 
       </div>
 
-      <!-- Right Sidebar -->
-      <div class="col-sm-3 sidenav">
-        
 
-        <div class="well">
-          <p>ADS</p>
-        </div>
-        <div class="well">
-          <p>ADS</p>
+
+      <!-- Right Sidebar -->
+      <div class="col-sm-3 sidenav sidenav-right">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Upcoming Events</h5>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Company</th>
+                  <th scope="col">Due Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Apple</td>
+                  <td>28th Sept, 2021</td>
+                </tr>
+                <tr>
+                  <td>Microsoft</td>
+                  <td>19th Dec, 2021</td>
+                </tr>
+                <tr>
+                  <td>Amazon</td>
+                  <td>21st Dec, 2021</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
