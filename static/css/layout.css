@@ -1,0 +1,39 @@
+:root {
+    --theme-dark: #225161;
+    --theme-light: #295D6B;
+    --text-color: white;
+    --navbar-background: #16353f;
+  }
+
+.navbar {
+    background-color: var(--navbar-background);
+}
+
+.sidenav {
+    padding-top: 20px;    
+  }
+
+.main-content {
+    padding-top: 20px;
+}
+
+.status-card {
+    margin: 20px;
+    background-color: var(--theme-light);
+    border-radius: 10%;
+}
+
+.list-group-item {
+    background-color: var(--theme-light);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--theme-dark);
+  }
+
+.card-icons {
+    font-size:80px;
+    margin-top: 10px;
+    color: black;
+}

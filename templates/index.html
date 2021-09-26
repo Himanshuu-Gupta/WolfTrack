@@ -1,97 +1,119 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google Nexus Website Menu</title>
-    <meta
-      name="description"
-      content="A sidebar menu as seen on the Google Nexus 7 website"
-    />
-    <meta
-      name="keywords"
-      content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu"
-    />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../static/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="../static/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="../static/css/component.css" />
-    <script src="../static/js/modernizr.custom.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <ul id="gn-menu" class="gn-menu-main">
-        <li class="gn-trigger">
-          <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-          <nav class="gn-menu-wrapper">
-            <div class="gn-scroller">
-              <ul class="gn-menu">
-                <li class="gn-search-item">
-                  <input placeholder="Search" type="search" class="gn-search" />
-                  <a class="gn-icon gn-icon-search"><span>Search</span></a>
-                </li>
-                <li>
-                  <a class="gn-icon gn-icon-download">Downloads</a>
-                  <ul class="gn-submenu">
-                    <li>
-                      <a class="gn-icon gn-icon-illustrator"
-                        >Vector Illustrations</a
-                      >
-                    </li>
-                    <li>
-                      <a class="gn-icon gn-icon-photoshop">Photoshop files</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a class="gn-icon gn-icon-cog">Settings</a></li>
-                <li><a class="gn-icon gn-icon-help">Help</a></li>
-                <li>
-                  <a class="gn-icon gn-icon-archive">Archives</a>
-                  <ul class="gn-submenu">
-                    <li><a class="gn-icon gn-icon-article">Articles</a></li>
-                    <li><a class="gn-icon gn-icon-pictures">Images</a></li>
-                    <li><a class="gn-icon gn-icon-videos">Videos</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <!-- /gn-scroller -->
-          </nav>
-        </li>
-        <li><a href="http://tympanus.net/codrops">Codrops</a></li>
-        <li>
-          <a
-            class="codrops-icon codrops-icon-prev"
-            href="http://tympanus.net/Development/HeaderEffects/"
-            ><span>Previous Demo</span></a
-          >
-        </li>
-        <li>
-          <a
-            class="codrops-icon codrops-icon-drop"
-            href="http://tympanus.net/codrops/?p=16030"
-            ><span>Back to the Codrops Article</span></a
-          >
-        </li>
-      </ul>
-      <header>
-        <h1>
-          Google Nexus Website Menu
-          <span
-            >A sidebar menu as seen on the
-            <a href="http://www.google.com/nexus/index.html">Google Nexus 7</a>
-            page</span
-          >
-        </h1>
-      </header>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    .content {
+      background-color: aqua;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
     </div>
-    <!-- /container -->
-    <script src="../static/js/classie.js"></script>
-    <script src="../static/js/gnmenu.js"></script>
-    <script>
-      new gnMenu(document.getElementById("gn-menu"));
-    </script>
-  </body>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+
+    <!-- Side bar -->
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+
+    <!-- Content -->
+    <div class="col-sm-8 text-left content"> 
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Right sidebar-->
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
 </html>
