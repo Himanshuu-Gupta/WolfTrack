@@ -1,279 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>WolfTrack - Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="../static/css/layout.css">
-  <style>
-
-  </style>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-    <ul class="navbar-nav ">
-      <a class="navbar-brand" href="#">WolkTrack</a>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
+{% extends "layout/base.html" %}
+{% block content %}
+<div class="row">
+  <div class="card status-card col-md" style="width: 18rem;">
+    <i class="material-icons card-icons">schedule</i>
+    <div class="card-body">
+      <h5 class="card-title">Wish List</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      {% for item in data.wishlist %}
+      <li class="list-group-item border-0">{{ item }}</li>
+      {% endfor %}
     </ul>
-
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="container-fluid">
-    <div class="row content">
-
-      <!-- Left Sidebar -->
-      <div class="col-sm-3 sidenav sidenav-left">
-        <center>
-          <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
-            data-holder-rendered="true">
-
-          <br><br>
-
-          <div class="card" style="width: 18rem; text-align: left;">
-            <div class="card-body">
-              <h5 class="card-title">Jessica Holds</h5>
-              <div class="row">
-                <div class="col">
-                  <b>Gender</b>
-                </div>
-                <div class="col">
-                  Female
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col">
-                  <b>Location</b>
-                </div>
-                <div class="col">
-                  Raleigh, NC
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-
-          <br><br>
-
-
-
-        </center>
-
-      </div>
-
-      <!-- Content -->
-      <div class="col-sm-6 text-left main-content">
-        <center>
-          <div class="row">
-            <div class="card status-card col-md" style="width: 18rem;">
-              <i class="material-icons card-icons">schedule</i>
-              <div class="card-body">
-                <h5 class="card-title">Wish List</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0">Cras justo odio</li>
-                <li class="list-group-item border-0">Dapibus ac facilisis in</li>
-                <li class="list-group-item border-0">Vestibulum at eros</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
-              </div>
-            </div>
-
-            <div class="card status-card col-md" style="width: 18rem;">
-              <i class="material-icons card-icons">trending_up</i>
-              <div class="card-body">
-                <h5 class="card-title">In Process</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0">Cras justo odio</li>
-                <li class="list-group-item border-0">Dapibus ac facilisis in</li>
-                <li class="list-group-item border-0">Vestibulum at eros</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="card status-card col-md" style="width: 18rem;">
-              <i class="material-icons card-icons">task</i>
-              <div class="card-body">
-                <h5 class="card-title">Applied</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0">Cras justo odio</li>
-                <li class="list-group-item border-0">Dapibus ac facilisis in</li>
-                <li class="list-group-item border-0">Vestibulum at eros</li>
-
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
-              </div>
-            </div>
-
-            <div class="card status-card col-md" style="width: 18rem;">
-              <i class="material-icons card-icons">beenhere</i>
-              <div class="card-body">
-                <h5 class="card-title">Offers</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0">Cras justo odio</li>
-                <li class="list-group-item border-0">Dapibus ac facilisis in</li>
-                <li class="list-group-item border-0">Vestibulum at eros</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal for New Application -->
-          <div class="modal fade new-application-modal" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">New Job Application</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body" style="text-align: left;">
-                  <div class="form-group">
-                    <label for="exampleInputName">Company Name</label>
-                    <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Google"
-                      required="required">
-                  </div>
-                  <div class="form-group">
-                    <label for="Location" required="required">Location</label>
-                    <input type="text" name="text" class="form-control" id="Location" placeholder="Enter Location">
-                  </div>
-                  <div class="form-group">
-                    <label for="JobProfile">Job Profile</label>
-                    <input type="text" name="text" class="form-control" id="JobProfile" placeholder="Enter Job Profile">
-                  </div>
-                  <div class="form-group">
-                    <label for="Salary">Salary</label>
-                    <input type="text" name="address" class="form-control" id="Salary" placeholder="Enter Salary">
-                  </div>
-                  <div class="form-group">
-                    <label for="Username">Username</label>
-                    <input type="text" name="address" class="form-control" id="Username" placeholder="Enter Username">
-                  </div>
-                  <div class="form-group">
-                    <label for="Password">Password</label>
-                    <input type="text" name="address" class="form-control" id="Password" placeholder="Enter Password">
-                  </div>
-                  <div class="form-group">
-                    <label for="SecurityQuestion">Security Question</label>
-                    <input type="text" name="address" class="form-control" id="SecurityQuestion"
-                      placeholder="Enter Security Question">
-                  </div>
-                  <div class="form-group">
-                    <label for="SecurityAnswer">Security Answer</label>
-                    <input type="text" name="address" class="form-control" id="SecurityAnswer"
-                      placeholder="Enter Security Answer">
-                  </div>
-                  <div class="form-group">
-                    <label for="Notes">Notes</label>
-                    <textarea class="form-control" id="Notes"
-                      placeholder="Save links and other information here"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="example-date-input" class="col-3 col-form-label">Date Applied</label>
-                    <div class="col-10">
-                      <input class="form-control" name="starting_date" type="date" value="2020-02-01"
-                        id="example-date-input">
-                    </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <label class="mr-4">Upload your CV:</label>
-                    <input type="file" name="file">
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Add</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </center>
-
-      </div>
-
-
-
-      <!-- Right Sidebar -->
-      <div class="col-sm-3 sidenav sidenav-right">
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Upcoming Events</h5>
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Company</th>
-                  <th scope="col">Due Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Apple</td>
-                  <td>28th Sept, 2021</td>
-                </tr>
-                <tr>
-                  <td>Microsoft</td>
-                  <td>19th Dec, 2021</td>
-                </tr>
-                <tr>
-                  <td>Amazon</td>
-                  <td>21st Dec, 2021</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+    <div class="card-body">
+      <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
     </div>
   </div>
 
+  <div class="card status-card col-md" style="width: 18rem;">
+    <i class="material-icons card-icons">trending_up</i>
+    <div class="card-body">
+      <h5 class="card-title">In Process</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      {% for item in data.inprogress %}
+      <li class="list-group-item border-0">{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+    </div>
+  </div>
+</div>
 
-</body>
+<div class="row">
+  <div class="card status-card col-md" style="width: 18rem;">
+    <i class="material-icons card-icons">task</i>
+    <div class="card-body">
+      <h5 class="card-title">Applied</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      {% for item in data.applied %}
+      <li class="list-group-item border-0">{{ item }}</li>
+      {% endfor %}
 
-</html>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+    </div>
+  </div>
+
+  <div class="card status-card col-md" style="width: 18rem;">
+    <i class="material-icons card-icons">beenhere</i>
+    <div class="card-body">
+      <h5 class="card-title">Offers</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      {% for item in data.offers %}
+      <li class="list-group-item border-0">{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal for New Application -->
+<div class="modal fade new-application-modal" id="exampleModalCenter" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">New Job Application</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: left;">
+        <div class="form-group">
+          <label for="exampleInputName">Company Name</label>
+          <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Google"
+            required="required">
+        </div>
+        <div class="form-group">
+          <label for="Location" required="required">Location</label>
+          <input type="text" name="text" class="form-control" id="Location" placeholder="Enter Location">
+        </div>
+        <div class="form-group">
+          <label for="JobProfile">Job Profile</label>
+          <input type="text" name="text" class="form-control" id="JobProfile" placeholder="Enter Job Profile">
+        </div>
+        <div class="form-group">
+          <label for="Salary">Salary</label>
+          <input type="text" name="address" class="form-control" id="Salary" placeholder="Enter Salary">
+        </div>
+        <div class="form-group">
+          <label for="Username">Username</label>
+          <input type="text" name="address" class="form-control" id="Username" placeholder="Enter Username">
+        </div>
+        <div class="form-group">
+          <label for="Password">Password</label>
+          <input type="text" name="address" class="form-control" id="Password" placeholder="Enter Password">
+        </div>
+        <div class="form-group">
+          <label for="SecurityQuestion">Security Question</label>
+          <input type="text" name="address" class="form-control" id="SecurityQuestion"
+            placeholder="Enter Security Question">
+        </div>
+        <div class="form-group">
+          <label for="SecurityAnswer">Security Answer</label>
+          <input type="text" name="address" class="form-control" id="SecurityAnswer"
+            placeholder="Enter Security Answer">
+        </div>
+        <div class="form-group">
+          <label for="Notes">Notes</label>
+          <textarea class="form-control" id="Notes" placeholder="Save links and other information here"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="example-date-input" class="col-3 col-form-label">Date Applied</label>
+          <div class="col-10">
+            <input class="form-control" name="starting_date" type="date" value="2020-02-01" id="example-date-input">
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <label class="mr-4">Upload your CV:</label>
+          <input type="file" name="file">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
