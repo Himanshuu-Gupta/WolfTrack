@@ -1,4 +1,5 @@
-# WolfTrack
+<h1 align= "center"><b>WolfTrack</b></h1>
+
 One stop shop for your very own personal Job-tracker application!
 
 Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job detail, we're talking about dates, notes, tasks, job descriptions, salaries, locations, company insight and more!
@@ -9,9 +10,7 @@ So, let's go get that job! 😎
 
 **Our motto: Don't stop until you're proud!**
 
-Languages used:
-
-##### Languages I use
+**Languages used:**
 
 
 ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5)
@@ -20,4 +19,11 @@ Languages used:
 ![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript)
 ![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql)
+
+**Built Using:**
+
+<code><a href="https://www.python.org/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"></a></code>
+<code><a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"></a></code>
+
+
 
