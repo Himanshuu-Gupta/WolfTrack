@@ -10,8 +10,6 @@ So, let's go get that job! 😎
 
 **Our motto: Don't stop until you're proud!**
 
-**Languages used:**
-
 <!-- 
 ![HTML5]()
 ![Java](https://img.shields.io/badge/-Java-000000?style=flat&logo=java)
@@ -23,9 +21,6 @@ So, let's go get that job! 😎
 ![Git](https://img.shields.io/badge/-Git-222222?style=flat&logo=git&logoColor=F05032)
 ![GitHub](https://img.shields.io/badge/-GitHub-222222?style=flat&logo=github&logoColor=181717)
 ![MS SQL Server](http://img.shields.io/badge/-MS%20SQL%20Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=ffffff) -->
-
-
-
 
 **Built Using:**
 
