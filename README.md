@@ -1,18 +1,23 @@
 <h1 align= "center"><b>WolfTrack</b></h1>
 
-**Goal**
+**Goal:**
+
 One stop shop for your very own personal Job-tracker application!
 
 
-**Project Description**
+**Project Description:**
+
 Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job detail, we're talking about dates, notes, tasks, job descriptions, salaries, locations, company insight and more!
 
 
 ![Alt Text](https://media.giphy.com/media/btbUGSHh3f6eBjbDfh/giphy-downsized-large.gif?cid=ecf05e471ph0c5s2yc63oqz7nswkx588z022ckw6vm3jhzmh&rid=giphy-downsized-large.gif&ct=g)
+
 **So, let's go get that job! 😎**
 
+**Our motto:**
 
-**Our motto: Don't stop until you're proud!**
+![Alt Text](https://media.giphy.com/media/7zBG3bIV14nddNj3ko/giphy.gif?cid=790b76112100f623635602c75ee21781b0c6dceb288c4777&rid=giphy.gif&ct=s)
+
 
 <!-- 
 ![HTML5]()
