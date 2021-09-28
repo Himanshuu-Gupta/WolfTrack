@@ -40,7 +40,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`user_login` (
   `password` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `user_id_idx` (`user_id` ASC) VISIBLE,
-  CONSTRAINT `user_id`
     FOREIGN KEY (`user_id`)
     REFERENCES `wolftrack`.`user` (`user_id`)
     ON DELETE NO ACTION
@@ -61,7 +60,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`user_details` (
   `profile_link` VARCHAR(45) NULL,
   PRIMARY KEY (`id`),
   INDEX `user_id_idx` (`user_id` ASC) VISIBLE,
-  CONSTRAINT `user_id`
     FOREIGN KEY (`user_id`)
     REFERENCES `wolftrack`.`user` (`user_id`)
     ON DELETE NO ACTION
@@ -106,7 +104,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`recruiter` (
   `link` VARCHAR(45) NULL,
   PRIMARY KEY (`recruiter_id`),
   INDEX `company_id_idx` (`company_id` ASC) VISIBLE,
-  CONSTRAINT `company_id`
     FOREIGN KEY (`company_id`)
     REFERENCES `wolftrack`.`company` (`company_id`)
     ON DELETE NO ACTION
@@ -137,22 +134,18 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`application` (
   INDEX `role_id_idx` (`role_id` ASC) VISIBLE,
   INDEX `company_id_idx` (`company_id` ASC) VISIBLE,
   INDEX `recruiter_id_idx` (`recruiter_id` ASC) VISIBLE,
-  CONSTRAINT `user_id`
     FOREIGN KEY (`user_id`)
     REFERENCES `wolftrack`.`user` (`user_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `role_id`
     FOREIGN KEY (`role_id`)
     REFERENCES `wolftrack`.`roles` (`role_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `company_id`
     FOREIGN KEY (`company_id`)
     REFERENCES `wolftrack`.`company` (`company_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `recruiter_id`
     FOREIGN KEY (`recruiter_id`)
     REFERENCES `wolftrack`.`recruiter` (`recruiter_id`)
     ON DELETE NO ACTION
