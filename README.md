@@ -14,7 +14,7 @@ Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job
 
 **So, let's go get that job! 😎**
 
-<iframe src="https://giphy.com/embed/7zBG3bIV14nddNj3ko" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/thetribebox-transparent-tbcheers-7zBG3bIV14nddNj3ko">via GIPHY</a></p>
+![Alt Text](https://giphy.com/stickers/thetribebox-transparent-tbcheers-7zBG3bIV14nddNj3ko)
 
 **Our motto: 
 Don't stop until you're proud!**
