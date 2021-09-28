@@ -34,15 +34,15 @@
         <div class="form-content">
           <div class="login-form">
             <div class="title">Login</div>
-          <form name="loginForm" onsubmit="myFunction()">
+          <form name="loginForm" action="/login" method="post">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Enter your email" required>
+                <input name='username' type="email" placeholder="Enter your email" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" required>
+                <input name='password' type="password" placeholder="Enter your password" required>
               </div>
               <div class="button input-box">
                 <input type="submit" value="Sumbit">
@@ -53,7 +53,7 @@
       </div>
         <div class="signup-form">
           <div class="title">Signup</div>
-        <form name="signupForm" action="#">
+        <form name="signupForm" action="#" method="post">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
