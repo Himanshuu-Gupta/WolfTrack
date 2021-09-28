@@ -1,9 +1,10 @@
-from flask import Blueprint, session, request, redirect, render_template, current_app
+from flask import Blueprint, session, request, redirect, render_template, current_app, make_response
 from flask_login import LoginManager, login_user, UserMixin
 from datetime import datetime, timedelta
 
 login_route = Blueprint('admin', __name__)
 login_manager = LoginManager()
+headers = {'Content-Type': 'text/html'}
 
 @login_route.record_once
 def on_load(state):
@@ -24,13 +25,16 @@ def before_request():
 class User(UserMixin):
     pass
 
-#Validate the username and password with DB
+
 def is_valid(username, password):
+    ''' Validate the username and password with DB '''
     pass
 
 
 @login_route.route('', methods=["GET", "POST"])
 def login():
+    if request.method == 'GET':
+        return make_response(render_template('login.html'), 200, headers)
     username = request.json['Username']
     password = request.json['Password']
     if is_valid(username, password):
