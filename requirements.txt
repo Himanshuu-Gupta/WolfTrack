@@ -1,3 +1,5 @@
 #requirements
 flask
 flask_restful
+pymysql
+flask_login
