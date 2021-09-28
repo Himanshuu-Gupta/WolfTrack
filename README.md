@@ -1,11 +1,11 @@
 <h1 align= "center"><b>WolfTrack</b></h1>
 
-**Goal**
+**Goal:**
 
 One stop shop for your very own personal Job-tracker application!
 
 
-**Project Description**
+**Project Description:**
 
 Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job detail, we're talking about dates, notes, tasks, job descriptions, salaries, locations, company insight and more!
 
@@ -15,7 +15,8 @@ Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job
 **So, let's go get that job! 😎**
 
 
-**Our motto: Don't stop until you're proud!**
+**Our motto: 
+Don't stop until you're proud!**
 
 <!-- 
 ![HTML5]()
