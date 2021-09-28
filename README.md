@@ -14,10 +14,12 @@ Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job
 
 **So, let's go get that job! 😎**
 
-![Alt Text](https://giphy.com/stickers/thetribebox-transparent-tbcheers-7zBG3bIV14nddNj3ko)
+**Our motto:**
 
-**Our motto: 
-Don't stop until you're proud!**
+![Alt Text](https://media.giphy.com/media/7zBG3bIV14nddNj3ko/giphy.gif?cid=790b76112100f623635602c75ee21781b0c6dceb288c4777&rid=giphy.gif&ct=s)
+
+
+**Don't stop until you're proud!**
 
 <!-- 
 ![HTML5]()
