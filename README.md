@@ -2,6 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![DOI](https://zenodo.org/badge/408669082.svg)](https://zenodo.org/badge/latestdoi/408669082)
+[![GitHub Release](https://img.shields.io/github/release/Himanshuu-Gupta/WolfTrack)](https://github.com/Himanshuu-Gupta/WolfTrack/releases/tag/wolftrack)
+
+
 
 **Goal:**
 
@@ -52,5 +55,49 @@ Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job
 <img src="https://i.giphy.com/media/LMt9638dO8dftAjtco/200.webp" width="150"> <img src="https://i.giphy.com/media/KzJkzjggfGN5Py6nkT/200.webp" width="150"><img src="https://i.giphy.com/media/IdyAQJVN2kVPNUrojM/200.webp" width="150"> <img src="https://media.giphy.com/media/UWt0rhp21JgLwoeFQP/giphy.gif" width ="150"/> <img src="https://media.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif" width ="150"/> 
 </p>
 
+## Getting started:
 
+  - ### Prerequisite:
+      - Download [Python3.x](https://www.python.org/downloads/).
+
+   - ### Installation:
+      E.g If you downloaded `Python 3.8.7` above, then
+
+      **Steps to setup virtual environment**
+     - Create a virtual environment:
+
+        `python3.8 -m venv test_env`
+    
+     - Activate the virtual environment: 
+
+        `source test_env/bin/activate`
+    
+     - Build the virtual environment:(must be present in [project directory](./))
+
+        `pip install -r requirements.txt`
+
+  - ### Run Instructions
+
+     **To run/test the site locally:**
+
+     - Clone [WolfTrack github repo](https://github.com/Himanshuu-Gupta/WolfTrack).
+
+     - Navigate to [project directory](./).
+  
+     - Run `python main.py` or `python3 main.py`
+
+     - Site will be hosted at:
+       `http://127.0.0.1:5000/`
+
+## Contributors 👨‍🏭
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
+    <td align="center"><a href="https://github.com/Sneha-at"><img src="https://avatars.githubusercontent.com/u/81721081?v=4" width="100px;" alt=""/><br /><sub><b>Sneha Aradhey</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Ashnayak"><img src="https://avatars.githubusercontent.com/u/18304940?v=4" width="100px;" alt=""/><br /><sub><b>Ashwini Nayak</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Himanshuu-Gupta"><img src="https://avatars.githubusercontent.com/u/15701338?v=4" width="100px;" alt=""/><br /><sub><b>Himanshuu Gupta</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
+  </tr>
+</table>
 
