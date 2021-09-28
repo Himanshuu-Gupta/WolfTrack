@@ -2,7 +2,7 @@
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
 -- Schema mydb
@@ -12,7 +12,6 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- Schema mydb
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `wolftrack` DEFAULT CHARACTER SET utf8 ;
-SHOW WARNINGS;
 USE `wolftrack` ;
 
 -- -----------------------------------------------------
@@ -20,27 +19,21 @@ USE `wolftrack` ;
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `wolftrack`.`user` ;
 
-SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `wolftrack`.`user` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(45) NOT NULL,
-  `full_name` VARCHAR(45) NULL,
-  `location` VARCHAR(45) NULL,
-  `ph_number` VARCHAR(45) NULL,
+  `full_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
-  UNIQUE INDEX `first_name_UNIQUE` (`full_name` ASC) VISIBLE,
-  UNIQUE INDEX `location_UNIQUE` (`location` ASC) VISIBLE)
+  UNIQUE INDEX `first_name_UNIQUE` (`full_name` ASC) VISIBLE)
 ENGINE = InnoDB;
 
-SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `wolftrack`.`user_login`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `wolftrack`.`user_login` ;
 
-SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `wolftrack`.`user_login` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `user_id` INT NOT NULL,
@@ -54,14 +47,12 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`user_login` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `wolftrack`.`user_details`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `wolftrack`.`user_details` ;
 
-SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `wolftrack`.`user_details` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `user_id` INT NOT NULL,
@@ -77,42 +68,36 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`user_details` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `wolftrack`.`company`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `wolftrack`.`company` ;
 
-SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `wolftrack`.`company` (
   `company_id` INT NOT NULL AUTO_INCREMENT,
   `company_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`company_id`))
 ENGINE = InnoDB;
 
-SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `wolftrack`.`roles`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `wolftrack`.`roles` ;
 
-SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `wolftrack`.`roles` (
   `role_id` INT NOT NULL AUTO_INCREMENT,
   `role` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`role_id`))
 ENGINE = InnoDB;
 
-SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `wolftrack`.`recruiter`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `wolftrack`.`recruiter` ;
 
-SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `wolftrack`.`recruiter` (
   `recruiter_id` INT NOT NULL AUTO_INCREMENT,
   `company_id` INT NOT NULL,
@@ -128,14 +113,12 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`recruiter` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `wolftrack`.`application`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `wolftrack`.`application` ;
 
-SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `wolftrack`.`application` (
   `application_id` INT NOT NULL AUTO_INCREMENT,
   `user_id` INT NOT NULL,
@@ -176,7 +159,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`application` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-SHOW WARNINGS;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
