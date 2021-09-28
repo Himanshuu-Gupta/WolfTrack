@@ -6,7 +6,6 @@ class sql_helper:
 
     def connect_database(self):
         try:
-            print(os.environ['aws_rds_host'])
             self.connection_obj = pymysql.connect(
                     host= os.environ['aws_rds_host'], 
                     port = 3306,
