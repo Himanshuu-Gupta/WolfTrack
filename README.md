@@ -19,8 +19,6 @@ Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job
 ![Alt Text](https://media.giphy.com/media/7zBG3bIV14nddNj3ko/giphy.gif?cid=790b76112100f623635602c75ee21781b0c6dceb288c4777&rid=giphy.gif&ct=s)
 
 
-**Don't stop until you're proud!**
-
 <!-- 
 ![HTML5]()
 ![Java](https://img.shields.io/badge/-Java-000000?style=flat&logo=java)
