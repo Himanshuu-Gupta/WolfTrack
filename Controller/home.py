@@ -42,7 +42,6 @@ profile = {
 
 @home_route.route('', methods=['GET'])
 def home():
-
     return render_template('home.html', data=data, upcoming_events=upcoming_events)
 
 

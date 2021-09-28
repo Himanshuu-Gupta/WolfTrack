@@ -1,29 +1,25 @@
-from flask import Flask
-from flask_cors import CORS
-import os
+from flask import Flask, request, render_template, make_response
+from flask_restful import Resource, Api
+from Login.login import login_route
+from Controller.activity_controller import Activity
+from Controller.application_controller import Application
+from Controller.profile_controller import Profile
+from Controller.user_controller import User
 from Controller.home import home_route
-# from ErrorHandler.error import handle_err
-from login import auth_token
+
+app = Flask(__name__)
+api = Api(app)
+
+api.add_resource(User, '/user')
+api.add_resource(Activity, '/activity')
+api.add_resource(Profile, '/profile')
+api.add_resource(Application, '/application')
+app.register_blueprint(login_route, url_prefix='/login')
+app.register_blueprint(home_route, url_prefix='/')
+app.app_context().push()
 
 
-def create_app():
-    app_p = Flask(__name__)
-    # CORS(app_p)
-    app_p.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-    app_p.app_context().push()
-    print(app_p.url_map)
-    return app_p
-
-def link_blueprints(app):
-    # app.register_blueprint(report_api, url_prefix='/reports')
-    # app.register_blueprint(handle_err)
-    app.register_blueprint(auth_token, url_prefix='/login')
-    app.register_blueprint(home_route, url_prefix='/')
-    return app
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    app = create_app()
-    app = link_blueprints(app)
-    print(app.url_map)
-    app.run()
+    app.config['SECRET_KEY'] = 'Sample' #os.environ.get('SECRET_KEY')
+    app.app_context().push()
+    app.run(debug=True)

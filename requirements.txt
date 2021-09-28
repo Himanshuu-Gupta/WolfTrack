@@ -1,2 +1,3 @@
-
- test
+#requirements
+flask
+flask_restful
