@@ -1,5 +1,8 @@
 <h1 align= "center"><b>WolfTrack</b></h1>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![DOI](https://zenodo.org/badge/408669082.svg)](https://zenodo.org/badge/latestdoi/408669082)
+
 **Goal:**
 
 One stop shop for your very own personal Job-tracker application!
