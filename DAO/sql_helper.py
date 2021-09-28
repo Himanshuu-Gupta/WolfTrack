@@ -12,6 +12,7 @@ class sql_helper:
                     user = os.environ['aws_rds_user'], 
                     password = os.environ['aws_rds_password'],
                     db = "wolftrack",
+                    autocommit=True
                     ) 
         except:
             pass
