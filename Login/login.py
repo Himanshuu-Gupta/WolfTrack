@@ -37,8 +37,8 @@ def on_load(state):
     login_manager.init_app(state.app)
 
 @login_manager.user_loader
-def load_user(userid):
-    return session['userinfo'][userid]
+def load_user(id):
+    return User(session['userinfo']['user_name'])
 
 @login_route.before_app_request
 def before_request():
@@ -49,13 +49,22 @@ def before_request():
             pass
 
 class User(UserMixin):
-    pass
+    def __init__(self, username) -> None:
+        self.username = username
+
+    def is_active(self):
+        return self.active
+
+    def is_anonymous(self):
+        return False
+
+    def is_authenticated(self):
+        return True
 
 
 def is_valid(username, password):
     ''' Validate the username and password with DB '''
     return True
-
 
 @login_route.route('', methods=["GET", "POST"])
 def login():
@@ -65,10 +74,10 @@ def login():
     password = request.form['password']
     if not is_valid(username, password):
         pass
-    user = User()
-    session['userinfo'] = {'userid': username}
+    user = User(username)
+    session['userinfo'] = {'user_name':username}
     user.id = username
+    print(request.method)
     if request.method == 'POST':
         login_user(user)
-
     return make_response(render_template('home.html', data=data, upcoming_events=upcoming_events),301,headers)
