@@ -89,6 +89,10 @@ Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job
      - Site will be hosted at:
        `http://127.0.0.1:5000/`
 
+## Watch WolfTrack in action 
+https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-9f43-baf291c666cd.mp4
+
+
 ## Contributors 👨‍🏭
 
 <table>
