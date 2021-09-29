@@ -20,6 +20,11 @@ Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job
 
 **So, let's go get that job! 😎**
 
+
+## Watch WolfTrack in action 
+https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-9f43-baf291c666cd.mp4
+
+
 **Our motto:**
 
 ![Alt Text](https://media.giphy.com/media/7zBG3bIV14nddNj3ko/giphy.gif?cid=790b76112100f623635602c75ee21781b0c6dceb288c4777&rid=giphy.gif&ct=s)
@@ -88,9 +93,6 @@ Do away with complicated, messy spreadsheets! WolfTrack keeps track of every job
 
      - Site will be hosted at:
        `http://127.0.0.1:5000/`
-
-## Watch WolfTrack in action 
-https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-9f43-baf291c666cd.mp4
 
 
 ## Contributors 👨‍🏭
