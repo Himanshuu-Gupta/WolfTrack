@@ -12,8 +12,8 @@
       {% endfor %}
     </ul>
     <div class="card-body">
-        <a href="/view?show=wish_list" class="card-link">View More</a>
-        <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+      <a href="/view?show=wish_list" class="card-link">View More</a>
+      <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
     </div>
   </div>
 
@@ -28,8 +28,8 @@
       {% endfor %}
     </ul>
     <div class="card-body">
-        <a href="/view?show=in_progress" class="card-link">View More</a>
-        <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+      <a href="/view?show=in_progress" class="card-link">View More</a>
+      <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
     </div>
   </div>
 </div>
@@ -47,8 +47,8 @@
 
     </ul>
     <div class="card-body">
-        <a href="/view?show=applied" class="card-link">View More</a>
-        <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+      <a href="/view?show=applied" class="card-link">View More</a>
+      <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
     </div>
   </div>
 
@@ -63,8 +63,8 @@
       {% endfor %}
     </ul>
     <div class="card-body">
-        <a href="/view?show=offers" class="card-link">View More</a>
-        <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+      <a href="/view?show=offers" class="card-link">View More</a>
+      <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
 
     </div>
   </div>
@@ -81,61 +81,71 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body" style="text-align: left;">
-        <div class="form-group">
-          <label for="exampleInputName">Company Name</label>
-          <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Google"
-            required="required">
-        </div>
-        <div class="form-group">
-          <label for="Location" required="required">Location</label>
-          <input type="text" name="text" class="form-control" id="Location" placeholder="Enter Location">
-        </div>
-        <div class="form-group">
-          <label for="JobProfile">Job Profile</label>
-          <input type="text" name="text" class="form-control" id="JobProfile" placeholder="Enter Job Profile">
-        </div>
-        <div class="form-group">
-          <label for="Salary">Salary</label>
-          <input type="text" name="address" class="form-control" id="Salary" placeholder="Enter Salary">
-        </div>
-        <div class="form-group">
-          <label for="Username">Username</label>
-          <input type="text" name="address" class="form-control" id="Username" placeholder="Enter Username">
-        </div>
-        <div class="form-group">
-          <label for="Password">Password</label>
-          <input type="text" name="address" class="form-control" id="Password" placeholder="Enter Password">
-        </div>
-        <div class="form-group">
-          <label for="SecurityQuestion">Security Question</label>
-          <input type="text" name="address" class="form-control" id="SecurityQuestion"
-            placeholder="Enter Security Question">
-        </div>
-        <div class="form-group">
-          <label for="SecurityAnswer">Security Answer</label>
-          <input type="text" name="address" class="form-control" id="SecurityAnswer"
-            placeholder="Enter Security Answer">
-        </div>
-        <div class="form-group">
-          <label for="Notes">Notes</label>
-          <textarea class="form-control" id="Notes" placeholder="Save links and other information here"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="example-date-input" class="col-3 col-form-label">Date Applied</label>
-          <div class="col-10">
-            <input class="form-control" name="starting_date" type="date" value="2020-02-01" id="example-date-input">
+      <form action="/application" method="post">
+        <div class="modal-body" style="text-align: left;">
+
+          <div class="form-group">
+            <label for="exampleInputName">Company Name</label>
+            <input type="text" name="company_name" class="form-control" id="exampleInputName" placeholder="Google"
+              required="required">
+          </div>
+          <div class="form-group">
+            <label for="Location" required="required">Location</label>
+            <input type="text" name="location" class="form-control" id="Location" placeholder="Enter Location">
+          </div>
+          <div class="form-group">
+            <label for="JobProfile">Job Profile</label>
+            <input type="text" name="job_profile" class="form-control" id="JobProfile" placeholder="Enter Job Profile">
+          </div>
+          <div class="form-group">
+            <label for="Salary">Salary</label>
+            <input type="number" name="salary" class="form-control" id="Salary" placeholder="Enter Salary">
+          </div>
+          <div class="form-group">
+            <label for="Username">Username</label>
+            <input type="text" name="user_name" class="form-control" id="Username" placeholder="Enter Username">
+          </div>
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="text" name="password" class="form-control" id="Password" placeholder="Enter Password">
+          </div>
+          <div class="form-group">
+            <label for="SecurityQuestion">Security Question</label>
+            <input type="text" name="security_question" class="form-control" id="SecurityQuestion"
+              placeholder="Enter Security Question">
+          </div>
+          <div class="form-group">
+            <label for="SecurityAnswer">Security Answer</label>
+            <input type="text" name="security_answer" class="form-control" id="SecurityAnswer"
+              placeholder="Enter Security Answer">
+          </div>
+          <div class="form-group">
+            <label for="Notes">Notes</label>
+            <textarea class="form-control" name="notes" id="Notes"
+              placeholder="Save links and other information here"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="example-date-input" class="col-3 col-form-label">Date Applied</label>
+            <div class="col-10">
+              <input class="form-control" name="date_applied" type="date" value="2020-02-01" id="example-date-input">
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label class="mr-4">Status:</label>
+            <select class="form-select" aria-label="Default select example" name="status">
+              <option value="TO_DO" selected>TO DO</option>
+              <option value="IN_PROCESS">IN PROCESS</option>
+              <option value="APPLIED">APPLIED</option>
+              <option value="ACCEPTED">ACCEPTED</option>
+              <option value="DECLINED">DECLINED</option>
+            </select>
           </div>
         </div>
-        <div class="form-group mt-3">
-          <label class="mr-4">Upload your CV:</label>
-          <input type="file" name="file">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Add</button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Add</button>
-      </div>
+      </form>
     </div>
   </div>
 </div>
