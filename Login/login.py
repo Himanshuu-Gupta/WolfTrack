@@ -1,4 +1,4 @@
-from flask import Blueprint, session, request, redirect, render_template, current_app, make_response
+from flask import Blueprint, session, request, redirect, render_template, current_app, make_response, url_for
 from flask_login import LoginManager, login_user, UserMixin
 from datetime import datetime, timedelta
 
@@ -81,4 +81,4 @@ def login():
     if request.method == 'POST':
         login_user(user)
 
-    return make_response(render_template('home.html', data=data, upcoming_events=upcoming_events),301,headers)
+    return redirect(url_for('home_route.home'))
