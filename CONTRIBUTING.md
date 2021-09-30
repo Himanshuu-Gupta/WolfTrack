@@ -24,7 +24,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 1. Before creating a bug report, double check with the existing list if the bug is already reported.
 2. In the event of the bug not being reported, communicate the issue with the owners of this repository via any suitable method of communication (preferrably via email). Remember    to include as many details as possible including and not limiting to various test cases or scenarios that helped identify the issue. This information could help us resolve the    issue faster.
-3. Fill out [the Bug Report template](https://github.com/Himanshuu-Gupta/SE_Fraction_Force/blob/main/Templates/Bug_Report.md):
+3. Fill out [the Bug Report template](https://github.com/Himanshuu-Gupta/WolfTrack/blob/main/issue_templates/Bug_Report.md):
    * How can the problem be reproduced?
    * Is this problem a recent observation?
    * What might have triggered the problem?
@@ -33,5 +33,5 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 
 ## Suggesting Enhancements
-Fill in [the Feature Request template](https://github.com/Himanshuu-Gupta/SE_Fraction_Force/blob/main/Templates/Feature_Request.md), including the steps that you imagine you would take if the feature you're requesting existed.
+Fill in [the Feature Request template](https://github.com/Himanshuu-Gupta/WolfTrack/blob/main/issue_templates/Feature_Request.md), including the steps that you imagine you would take if the feature you're requesting existed.
 
