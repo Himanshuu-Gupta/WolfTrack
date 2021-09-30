@@ -97,6 +97,7 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 ## Tools
 - [Preetier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [JS-HTML-CSS Formatter](https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter)
+- [PyLint](https://pylint.org/)
 
 ## Preview
 
