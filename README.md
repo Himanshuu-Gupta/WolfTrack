@@ -93,6 +93,10 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 
      - Site will be hosted at:
        `http://127.0.0.1:5000/`
+       
+## Tools
+- [Preetier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [JS-HTML-CSS Formatter](https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter)
 
 ## Preview
 
@@ -110,6 +114,11 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 
 - **Sign Up Page**
 ![signup](https://user-images.githubusercontent.com/42767118/135380001-4bc1c1cf-e021-4e90-a11d-7982846f6122.png)
+
+## Chat Channel
+
+<code><a href="https://discord.gg/wRZ56mvA" target="_blank"><img height="100" width="250" src="https://user-images.githubusercontent.com/42767118/135394825-26dee6db-7a64-4e3f-902a-1e35abd4cf0c.png"></a></code>
+
 
 ### Phase 1:
 
