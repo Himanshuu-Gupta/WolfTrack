@@ -1,6 +1,7 @@
 from flask import Blueprint
 from flask import Flask, render_template, url_for, request
-from flask_login import login_required
+from flask_login import login_required, logout_user
+from werkzeug.utils import redirect
 home_route = Blueprint('home_route', __name__)
 
 
@@ -51,3 +52,9 @@ def home():
 def view():
     card_selected = request.args.get('user')
     return render_template('view_list.html', data=data, upcoming_events=upcoming_events)
+
+@home_route.route('/logout', methods=['GET'])
+@login_required
+def logout():
+    logout_user()
+    return redirect("/login")
