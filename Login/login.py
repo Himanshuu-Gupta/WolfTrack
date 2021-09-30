@@ -38,7 +38,7 @@ def on_load(state):
 
 @login_manager.user_loader
 def load_user(userid):
-    return session['userinfo'][userid]
+    return User(session['userinfo']['userid'])
 
 @login_route.before_app_request
 def before_request():
@@ -49,7 +49,17 @@ def before_request():
             pass
 
 class User(UserMixin):
-    pass
+    def __init__(self, username) -> None:
+        self.username = username
+
+    def is_active(self):
+        return self.active
+
+    def is_anonymous(self):
+        return False
+
+    def is_authenticated(self):
+        return True
 
 
 def is_valid(username, password):
@@ -65,7 +75,7 @@ def login():
     password = request.form['password']
     if not is_valid(username, password):
         pass
-    user = User()
+    user = User(username)
     session['userinfo'] = {'userid': username}
     user.id = username
     if request.method == 'POST':
