@@ -94,6 +94,23 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
      - Site will be hosted at:
        `http://127.0.0.1:5000/`
 
+## Preview
+
+- **Dashboard**
+![Dashboard](https://user-images.githubusercontent.com/42767118/135379980-43a32373-e11d-4ed4-baa3-9c77449acfe9.png)
+
+- **Add New Application**
+![Add_new_application](https://user-images.githubusercontent.com/42767118/135379982-fecc15f8-a121-48f7-a3ed-62337a9747e4.png)
+
+- **View List of Applications**
+![list2](https://user-images.githubusercontent.com/42767118/135383447-5ac3e6cc-6fef-4b9e-a233-bf5bfc1075bf.png)
+
+
+- **Login Page**
+![login](https://user-images.githubusercontent.com/42767118/135379994-8db87d4f-ef98-4005-97ea-b6d56cd655ec.png)
+
+- **Sign Up Page**
+![signup](https://user-images.githubusercontent.com/42767118/135380001-4bc1c1cf-e021-4e90-a11d-7982846f6122.png)
 
 ## Contributors 👨‍🏭
 
