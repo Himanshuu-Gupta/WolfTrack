@@ -11,25 +11,25 @@ class User(Resource):
         self.headers = {'Content-Type': 'text/html'}
         self.user = user_dao()
 
-    @login_required
+    #@login_required
     def get(self):
         self.user.get_user()
         return make_response('Coming Soon!!')
         # return make_response(render_template('home.html', data=data, upcoming_events=upcoming_events), 200, headers)
 
-    @login_required
+    #@login_required
     def post(self):
         self.user.create_user()
         some_json=request.get_json()
         return {'you sent': some_json}, 200
 
-    @login_required
+    #@login_required
     def put(self):
         self.user.update_details()
         some_json=request.get_json()
         return {'you sent': some_json}, 200
 
-    @login_required
+    #@login_required
     def delete(self):
         self.user.delete_user()
         some_json=request.get_json()
