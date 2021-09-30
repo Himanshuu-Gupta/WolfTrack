@@ -17,12 +17,12 @@ class FlaskTest(unittest.TestCase):
         response = tester.get("/user")
         self.assertEqual(response.content_type, "application/json")
 
-    #check if the data returned
+    #check data returned
     def test_index_data(self):
         tester = app.test_client(self)
         response = tester.get("/login")
         print(response.data)
         self.assertEqual(b'WolfTrack' in response.data, True)
 
-# if _name=="main":
-#     unittest.main()
+ if __name__=="__main__":
+     unittest.main()
