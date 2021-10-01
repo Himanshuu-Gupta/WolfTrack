@@ -100,22 +100,37 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 - [JS-HTML-CSS Formatter](https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter)
 - [PyLint](https://pylint.org/)
 
+## Third-Party Tools
+
+- [AWS Relational Database Service-RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+  -  The AWS Database is used as a primary DB by the location. The application interacts with the DB and no additional steps are required from the users. For any contributors or future developers, please mail to wolftrackse@gmail.com to get your AWS IAM user account details to connect to AWS RDS.
+- [Microsft Power BI](https://docs.microsoft.com/en-us/power-bi/)
+
 ## Preview
 
-- **Dashboard**
+- **Sign Up Page**
+  - User Interface to signup to the app
+![signup](https://user-images.githubusercontent.com/42767118/135380001-4bc1c1cf-e021-4e90-a11d-7982846f6122.png)
+
+- **Login Page**
+  - User Interface to login to the Wolftrack app. After successful login, user will be redirected to the Dashboard page
+![login](https://user-images.githubusercontent.com/42767118/135379994-8db87d4f-ef98-4005-97ea-b6d56cd655ec.png)
+
+- **Dashboard** 
+  - The 4 section (Wishlist, Applied, In-process, Offers) categorizes all the applications based on the current status and shows 3 applications on the home page. The tool allows the user to create new applications by clicking on Add New button on each section while the 'View All' allows the user to list all the applications.
+  - The left-most section of the dashboard shows the User details.
+  - Upcoming Activities - The upcoming activities shows the top 5 activities nearing the deadline. The activities are picked up from the applications and the company name and the due date is displayed on this section. 
+  - Location- The map shows the various office locations for the applied companies. The thought behind is to better plan the commute and residence based on the location distance
 ![Dashboard](https://user-images.githubusercontent.com/42767118/135379980-43a32373-e11d-4ed4-baa3-9c77449acfe9.png)
 
-- **Add New Application**
+- **Add New Application** 
+  - User interface for adding a new application to the portal
 ![Add_new_application](https://user-images.githubusercontent.com/42767118/135379982-fecc15f8-a121-48f7-a3ed-62337a9747e4.png)
 
 - **View List of Applications**
+  - User interface to view all the applications 
 ![list2](https://user-images.githubusercontent.com/42767118/135383447-5ac3e6cc-6fef-4b9e-a233-bf5bfc1075bf.png)
 
-- **Login Page**
-![login](https://user-images.githubusercontent.com/42767118/135379994-8db87d4f-ef98-4005-97ea-b6d56cd655ec.png)
-
-- **Sign Up Page**
-![signup](https://user-images.githubusercontent.com/42767118/135380001-4bc1c1cf-e021-4e90-a11d-7982846f6122.png)
 
 ## Chat Channel
 
