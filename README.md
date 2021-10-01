@@ -146,6 +146,9 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 - [ ] Reading mails from your inbox and automatically adding/updating the status of the application
 - [ ] Enabling Desktop Notifications
 
+## Contributions to the Project
+Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/WolfTrack/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
+
 ## Contributors 👨‍🏭
 
 <table>
@@ -157,4 +160,8 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
     <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
   </tr>
 </table>
+
+
+## Contact 
+In case of any issues, please mail your queries to wolftrackse@gmail.com 
 
