@@ -164,17 +164,18 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 ## Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/WolfTrack/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
-## Contributors 👨‍🏭
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
-    <td align="center"><a href="https://github.com/Sneha-at"><img src="https://avatars.githubusercontent.com/u/81721081?v=4" width="100px;" alt=""/><br /><sub><b>Sneha Aradhey</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Ashnayak"><img src="https://avatars.githubusercontent.com/u/18304940?v=4" width="100px;" alt=""/><br /><sub><b>Ashwini Nayak</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Himanshuu-Gupta"><img src="https://avatars.githubusercontent.com/u/15701338?v=4" width="100px;" alt=""/><br /><sub><b>Himanshuu Gupta</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
-  </tr>
-</table>
+## Contributors
+<center>
+  <table>
+    <tr>
+        <td align="center"><a href="https://github.com/apurva-s"><img src="https://avatars.githubusercontent.com/u/32777604?v=4" width="100px;" alt=""/><br /><sub><b>Apurva Sonavane</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/ArpithaVijayakumar/"><img src="https://avatars.githubusercontent.com/u/45428701?s=400&u=15851f4800b87dcd2b8cbf9ff0a040bc8987e7c0&v=4" width="100px;" alt=""/><br /><sub><b>Arpitha Vijayakumar</b></sub></a></td>
+    <td align="center"><a href="https://github.com/ivbhatt"><img src="https://avatars.githubusercontent.com/u/20361038?v=4" width="100px;" alt=""/><br /><sub><b>Ishan Bhatt</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Krishika510"><img src="https://avatars.githubusercontent.com/u/17769434?v=4" width="100px;" alt=""/><br /><sub><b>Krishika Shivnani</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/UnnatiPrema/"><img src="https://avatars.githubusercontent.com/u/24750759?s=400&u=ab27d86edc758ff53bd68808430d8e5bf172e34a&v=4" width="100px;" alt=""/><br /><sub><b>Unnati Nadupalli</b></sub></a><br /></td>
+    </tr>
+  </table>
+</center>
 
 
 ## Contact 
