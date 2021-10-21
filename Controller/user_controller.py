@@ -18,10 +18,9 @@ class User(Resource):
         # return make_response(render_template('home.html', data=data, upcoming_events=upcoming_events), 200, headers)
 
     #@login_required
-    def post(self):
-        self.user.create_user()
-        some_json=request.get_json()
-        return {'you sent': some_json}, 200
+    def post(self, name, email,password):
+        return self.user.create_user(name,email,password)
+        
 
     #@login_required
     def put(self):
