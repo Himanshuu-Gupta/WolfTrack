@@ -12,10 +12,8 @@ class User(Resource):
         self.user = user_dao()
 
     #@login_required
-    def get(self):
-        self.user.get_user()
-        return make_response('Coming Soon!!')
-        # return make_response(render_template('home.html', data=data, upcoming_events=upcoming_events), 200, headers)
+    def get(self,email,password):
+        return self.user.get_user(email,password)
 
     #@login_required
     def post(self, name, email,password):
