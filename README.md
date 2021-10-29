@@ -176,6 +176,15 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/WolfTra
     </tr>
   </table>
 </center>
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
+    <td align="center"><a href="https://github.com/Sneha-at"><img src="https://avatars.githubusercontent.com/u/81721081?v=4" width="100px;" alt=""/><br /><sub><b>Sneha Aradhey</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Ashnayak"><img src="https://avatars.githubusercontent.com/u/18304940?v=4" width="100px;" alt=""/><br /><sub><b>Ashwini Nayak</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Himanshuu-Gupta"><img src="https://avatars.githubusercontent.com/u/15701338?v=4" width="100px;" alt=""/><br /><sub><b>Himanshuu Gupta</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
+  </tr>
+</table>
 
 
 ## Contact 
