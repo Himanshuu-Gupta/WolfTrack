@@ -5,7 +5,10 @@
 [![GitHub Release](https://img.shields.io/github/release/Himanshuu-Gupta/WolfTrack)](https://github.com/Himanshuu-Gupta/WolfTrack/releases/tag/wolftrack)
 [![Build Status](https://app.travis-ci.com/Himanshuu-Gupta/WolfTrack.svg?branch=main)](https://app.travis-ci.com/Himanshuu-Gupta/WolfTrack)
 
-
+**Version 2 tags:**<br/>
+<br/>
+[![DOI](https://zenodo.org/badge/418295938.svg)](https://zenodo.org/badge/latestdoi/418295938)
+[![GitHub Release](https://img.shields.io/github/release/ArpithaVijayakumar/WolfTrack)](https://github.com/ArpithaVijayakumar/WolfTrack/releases/tag/wolftrack)
 
 **Goal:**
 
