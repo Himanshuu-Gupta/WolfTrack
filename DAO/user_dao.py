@@ -16,7 +16,7 @@ class user_dao:
             return 0
         if(email == result[0][2]):
             if(password == self.__db.run_query("SELECT password FROM user_login WHERE user_id="+str(result[0][1]))[0][0]):
-                data["name"] = result[0][3]
+                data["ful_name"] = str(result[0][3])
                 return data
             else:
                 return 2
