@@ -62,11 +62,11 @@ def loginUser():
     if(result == 0):
         error = "Email does not exits. Please enter a valid email."
         return render_template('login.html',loginError = error)
-    elif(result == 1):
-        return render_template('home.html', data=data, upcoming_events=upcoming_events)
     elif(result == 2):
         error="Password incorrect."
         return render_template('login.html',loginError = error)
+    else:
+        return render_template('home.html', data=result, upcoming_events=upcoming_events)
     
 
 @home_route.route('/signup', methods=['POST'])
