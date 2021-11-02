@@ -18,6 +18,13 @@
 --
 -- Dumping data for table `roles`
 --
+--SIGNUP stored procedure creating the user and inserting the user in corresponding table
+CREATE DEFINER=`admin`@`%` PROCEDURE `CreateUser`(IN email varchar(256),IN name varchar(256),IN password varchar(256))
+BEGIN
+	INSERT INTO `user_login`(password) values(password);
+    SET @last_id_in_user_login = LAST_INSERT_ID();
+	INSERT INTO `user`(user_id,email,full_name) values(@last_id_in_user_login,email,name);
+END
 
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
