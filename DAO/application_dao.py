@@ -1,7 +1,4 @@
 from DAO.sql_helper import sql_helper
-from DAO import user_dao
-
-user = user_dao()
 
 class application_dao:
     def add_application(self, email, company_name, location, job_profile, salary, username, password, security_question, security_answer, notes,
