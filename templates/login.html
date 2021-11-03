@@ -8,6 +8,9 @@
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/login.js') }}"></script>
     
   </head>
@@ -38,13 +41,13 @@
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input name='username' type="email" placeholder="Enter your email" required>
+                <input id='login-username' name='username' type="email" placeholder="Enter your email" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input name='password' type="password" placeholder="Enter your password" required>
+                <input id="login-password"name='password' type="password" placeholder="Enter your password" required>
               </div>
-              <div><p class="textRed">{{loginError}}</p></div>
+              <div id="login-error"><p class="text-red">{{loginError}}</p></div>
               <div class="button input-box">
                 <input type="submit" value="Submit">
               </div>
@@ -58,16 +61,16 @@
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" name ="name" placeholder="Enter your name" required>
+                <input id="signup-name" type="text" name ="name" placeholder="Enter your name" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" name ="email" placeholder="Enter your email" required>
+                <input id="signup-email" type="text" name ="email" placeholder="Enter your email" required>
               </div>
-              <div><p class="textRed">{{emailError}}</p></div>
+              <div id ="signup-error"><p class="text-red">{{emailError}}</p></div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" name="password" placeholder="Enter your password" required>
+                <input id="signup-password" type="password" name="password" placeholder="Enter your password" required>
               </div>
               <div class="button input-box">
                 <input type="submit" value="Submit">
