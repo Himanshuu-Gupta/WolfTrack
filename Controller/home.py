@@ -3,9 +3,13 @@ from flask import Flask, render_template, url_for, request
 from flask_login import login_required, logout_user
 from werkzeug.utils import redirect
 from Controller.user_controller import User
+from Controller.application_controller import Application
 home_route = Blueprint('home_route', __name__)
 
 user = User()
+application = Application()
+email = ''
+
 
 data = {
     "wishlist": ["Microsoft", "Google", "Uber"],
@@ -58,6 +62,7 @@ def loginUser():
     email = request.form["username"]
     password = request.form["password"]
     result = user.get(email,password)
+    print(result)
     error = ""
     if(result == 0):
         error = "Email does not exits. Please enter a valid email."
@@ -98,7 +103,7 @@ def add_new_application():
     security_answer = request.form["securityAnswer"]
     notes = request.form["notes"]
     date_applied = request.form["dateApplied"]
-    result = user.post(company_name, location, job_profile, salary, username, password, security_question, security_answer, notes,
+    result = application.post(email, company_name, location, job_profile, salary, username, password, security_question, security_answer, notes,
     date_applied)
     if (result==0):
         error = "This job application could not be stored in the database. Please try again."

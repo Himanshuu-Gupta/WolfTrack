@@ -70,26 +70,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `wolftrack`.`recruiter`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `wolftrack`.`recruiter` ;
-
-CREATE TABLE IF NOT EXISTS `wolftrack`.`recruiter` (
-  `recruiter_id` INT NOT NULL AUTO_INCREMENT,
-  `company_id` INT NOT NULL,
-  `name` VARCHAR(45) NOT NULL,
-  `email` VARCHAR(45) NULL,
-  `link` VARCHAR(45) NULL,
-  PRIMARY KEY (`recruiter_id`),
-  INDEX `company_id_idx` (`company_id` ASC) VISIBLE,
-    FOREIGN KEY (`company_id`)
-    REFERENCES `wolftrack`.`company` (`company_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `wolftrack`.`application`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `wolftrack`.`application` ;
@@ -99,7 +79,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`application` (
   `user_id` INT NOT NULL,
   `company_id` INT NOT NULL,
   `role_id` INT NOT NULL,
-  `recruiter_id` INT NULL,
   `application_date` TIMESTAMP NOT NULL,
   `job_description` VARCHAR(100) NULL,
   `salary` FLOAT NULL,
@@ -111,7 +90,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`application` (
   INDEX `user_id_idx` (`user_id` ASC) VISIBLE,
   INDEX `role_id_idx` (`role_id` ASC) VISIBLE,
   INDEX `company_id_idx` (`company_id` ASC) VISIBLE,
-  INDEX `recruiter_id_idx` (`recruiter_id` ASC) VISIBLE,
     FOREIGN KEY (`user_id`)
     REFERENCES `wolftrack`.`user` (`user_id`)
     ON DELETE NO ACTION
@@ -124,8 +102,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`application` (
     REFERENCES `wolftrack`.`company` (`company_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-    FOREIGN KEY (`recruiter_id`)
-    REFERENCES `wolftrack`.`recruiter` (`recruiter_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
