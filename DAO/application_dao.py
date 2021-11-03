@@ -3,7 +3,7 @@ from DAO.sql_helper import sql_helper
 class application_dao:
     def add_application(self, email, company_name, location, job_profile, salary, username, password, security_question, security_answer, notes,
     date_applied):
-
+        status = "TO_DO"
         userId = self.__db.run_query("SELECT user_id FROM user WHERE email='"+email+"'")[0][0]
         
         self.__db.run_query("CALL CreateCompany('"+company_name+"');")
@@ -12,9 +12,7 @@ class application_dao:
         self.__db.run_query("CALL CreateRoles('"+job_profile+"');")
         roleId = self.__db.run_query("SELECT role_id FROM roles WHERE role='"+job_profile+"'")[0][0]
 
-        self.__db.run_query("CALL CreateRecruiter('"+job_profile+"');")
-
-        return self.__db.run_query("CALL CreateApplication('userId','"+name+"','"+password+"');")
+        return self.__db.run_query("CALL CreateApplication('"+userId+"','"+companyId+"','"+roleId+"', '"+date_applied+"', '"+job_profile+"', '"+salary+"', '"+location+"', '"+status+"');")
 
     def get_application(self):
         pass

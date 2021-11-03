@@ -85,7 +85,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`application` (
   `location` VARCHAR(45) NOT NULL,
   `imortant_links` VARCHAR(45) NULL,
   `status` ENUM("TO_DO", "APPLIED", "IN_PROCESS", "ACCEPTED", "DECLINED") NOT NULL,
-  `due_date` TIMESTAMP NOT NULL,
   PRIMARY KEY (`application_id`),
   INDEX `user_id_idx` (`user_id` ASC) VISIBLE,
   INDEX `role_id_idx` (`role_id` ASC) VISIBLE,
