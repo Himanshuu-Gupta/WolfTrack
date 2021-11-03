@@ -5,7 +5,7 @@ class user_dao:
         self.__db = sql_helper()
 
     def create_user(self, name, email, password):
-        if(email == self.__db.run_query("SELECT email FROM user WHERE email='"+email+"'")[0][0]):
+        if(self.__db.run_query("SELECT count(*) FROM user WHERE email='"+email+"'")[0][0]==1):
             return 0
         return self.__db.run_query("CALL CreateUser('"+email+"','"+name+"','"+password+"');")
          

@@ -80,9 +80,9 @@ def signup():
     email = request.form["email"]
     password = request.form["password"]
     result = user.post(name,email,password)
-    if(result ==0):
+    if(result == 0):
         error = "This email already exists. Please try with different email"
-        return render_template('login.html/signup', emailError=error)
+        return render_template('login.html', emailError=error)
     return render_template('home.html', data=data, upcoming_events=upcoming_events)
 
 @home_route.route('/view', methods=['GET'])
