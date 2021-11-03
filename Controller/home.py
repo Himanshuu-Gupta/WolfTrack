@@ -91,7 +91,8 @@ def view():
     card_selected = request.args.get('user')
     return render_template('view_list.html', data=data, upcoming_events=upcoming_events)
 
-@home_route.route("/add_new_application", methods = ["POST"])
+@home_route.route("/add_new_application", methods = ["GET","POST"])
+# @login_required
 def add_new_application():
     company_name = request.form["companyName"]
     location = request.form["location"]
@@ -107,8 +108,8 @@ def add_new_application():
     date_applied)
     if (result==0):
         error = "This job application could not be stored in the database. Please try again."
-        return render_template('home.html/add_new_application', jobAddError=error)
-    # return render_template('home.html', data=data, upcoming_events=upcoming_events)
+        return render_template('home.html', jobAddError=error)
+    return render_template('home.html', data=data, upcoming_events=upcoming_events)
 
 
 @home_route.route('/logout', methods=['GET'])

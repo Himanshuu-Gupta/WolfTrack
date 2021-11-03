@@ -1,6 +1,9 @@
 from DAO.sql_helper import sql_helper
 
 class application_dao:
+    def __init__(self):
+        self.__db = sql_helper()
+
     def add_application(self, email, company_name, location, job_profile, salary, username, password, security_question, security_answer, notes,
     date_applied):
         status = "TO_DO"
