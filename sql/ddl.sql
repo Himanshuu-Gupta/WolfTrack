@@ -100,8 +100,6 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`application` (
     FOREIGN KEY (`company_id`)
     REFERENCES `wolftrack`.`company` (`company_id`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
