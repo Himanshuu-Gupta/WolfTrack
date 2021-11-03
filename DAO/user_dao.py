@@ -20,6 +20,8 @@ class user_dao:
                 return data
             else:
                 return 2
+    
+    def get_user_id(self, email):
             
 
     def update_details(self):
