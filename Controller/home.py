@@ -1,4 +1,4 @@
-from flask import Blueprint, flash
+from flask import Blueprint, flash, session
 from flask import Flask, render_template, url_for, request
 from flask_login import login_required, logout_user
 from werkzeug.utils import redirect
@@ -8,8 +8,6 @@ home_route = Blueprint('home_route', __name__)
 
 user = User()
 application = Application()
-email = ''
-
 
 data = {
     "wishlist": ["Microsoft", "Google", "Uber"],
@@ -59,9 +57,9 @@ def login():
 
 @home_route.route('/loginUser', methods=['GET', 'POST'])
 def loginUser():
-    email = request.form["username"]
+    session['email'] = request.form["username"]
     password = request.form["password"]
-    result = user.get(email,password)
+    result = user.get(session['email'],password)
     print(result)
     error = ""
     if(result == 0):
@@ -77,9 +75,9 @@ def loginUser():
 @home_route.route('/signup', methods=['POST'])
 def signup():
     name =  request.form["name"]
-    email = request.form["email"]
+    session['email'] = request.form["email"]
     password = request.form["password"]
-    result = user.post(name,email,password)
+    result = user.post(name,session['email'],password)
     if(result == 0):
         error = "This email already exists. Please try with different email"
         return render_template('login.html', emailError=error)
@@ -105,7 +103,7 @@ def add_new_application():
     security_answer = request.form["securityAnswer"]
     notes = request.form["notes"]
     date_applied = request.form["dateApplied"]
-    result = application.post(email, company_name, location, job_profile, salary, username, password, security_question, security_answer, notes,
+    result = application.post(session['email'], company_name, location, job_profile, salary, username, password, security_question, security_answer, notes,
     date_applied)
     if (result==0):
         error = "This job application could not be stored in the database. Please try again."
