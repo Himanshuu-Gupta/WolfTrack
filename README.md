@@ -9,6 +9,10 @@
 <br/>
 [![DOI](https://zenodo.org/badge/418295938.svg)](https://zenodo.org/badge/latestdoi/418295938)
 [![GitHub Release](https://img.shields.io/github/release/ArpithaVijayakumar/WolfTrack)](https://github.com/ArpithaVijayakumar/WolfTrack/releases/tag/wolftrack)
+![Python](https://img.shields.io/badge/python-v3.8+-yellow.svg)
+![GitHub issues](https://img.shields.io/github/issues/ArpithaVijayakumar/WolfTrack)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/ArpithaVijayakumar/WolfTrack)
+![Lines of code](https://img.shields.io/tokei/lines/github/ArpithaVijayakumar/WolfTrack)
 
 **Goal:**
 
