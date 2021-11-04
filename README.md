@@ -191,5 +191,5 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/WolfTra
 
 
 ## Contact 
-In case of any issues, please mail your queries to wolftrackse@gmail.com 
+In case of any issues, please e-mail your queries to wolftrackse@gmail.com or raise an issue on this repository
 
