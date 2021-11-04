@@ -11,10 +11,10 @@
 |.5|Number of commits: by different people  | in GH [Commit Stats](https://github.com/ArpithaVijayakumar/WolfTrackPlus/graphs/commit-activity)| .5
 |1|issues are being closed | evidence in GH [closed commits](https://github.com/ArpithaVijayakumar/WolfTrackPlus/issues?q=is%3Aissue+is%3Aclosed)| 1
 |.5|issues are discussed before they are closed | Issues discussed on Discord and weekly group meetings. Summarized in issues.| .5
-|.5|Use of syntax checkers. | [.pylintrc](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/.pylintrc)|.5|
+|.5|Use of syntax checkers. | [pylintrc](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/pylintrc)|.5|
 |1|Issues reports: there are many  | [Issues](https://github.com/ArpithaVijayakumar/WolfTrackPlus/issues) | 1
-|.5|Use of code formatters. | [.pylintrc](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/.pylintrc)|.5|
-|.5|Use of style checkers | [.pylintrc](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/.pylintrc)|.5|
+|.5|Use of code formatters. | [pylintrc](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/pylintrc)|.5|
+|.5|Use of style checkers | [pylintrc](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/pylintrc)|.5|
 |.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | [README.md](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/README.md) | .5
 |.5|test cases exist  | dozens of tests and those test cases are more than 30% of the code base|
 |.5|Use of code coverage  | [Codecov](https://codecov.io/gh/ArpithaVijayakumar/WolfTrackPlus)|.5|
