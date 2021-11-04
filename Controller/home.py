@@ -119,9 +119,9 @@ def add_new_application():
 
 
 @home_route.route('/logout', methods=['GET'])
-@login_required
+# @login_required
 def logout():
-    logout_user()
+    # logout_user()
     return redirect("/login")
 
 # if __name__ == '__main__':
