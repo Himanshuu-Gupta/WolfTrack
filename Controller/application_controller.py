@@ -9,8 +9,8 @@ class Application(Resource):
         self.application = application_dao()
 
     # @login_required
-    def get(self):
-        return {'about':"hello!"}
+    def get(self, email, application_category):
+        return self.application.get_application(email, application_category)
 
     # @login_required
     def post(self, email, company_name, location, job_profile, salary, username, password, security_question, security_answer, notes,

@@ -85,10 +85,17 @@ def signup():
     return render_template('home.html', data=data, upcoming_events=upcoming_events)
 
 @home_route.route('/view', methods=['GET'])
-@login_required
+# @login_required
 def view():
-    card_selected = request.args.get('user')
-    return render_template('view_list.html', data=data, upcoming_events=upcoming_events)
+    application_category = request.args.get('show')
+    
+
+    result_data = application.get(session["email"], application_category)
+
+    print(result_data)
+
+
+    return render_template('view_list.html', data=result_data, upcoming_events=upcoming_events)
 
 @home_route.route("/add_new_application", methods = ["GET","POST"])
 # @login_required
