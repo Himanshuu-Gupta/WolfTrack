@@ -83,6 +83,7 @@ def signup():
     if(result == 0):
         error = "This email already exists. Please try with different email"
         return render_template('login.html', emailError=error)
+    data["full_name"] = name
     return render_template('home.html', data=data, upcoming_events=upcoming_events)
 
 @home_route.route('/view', methods=['GET'])
