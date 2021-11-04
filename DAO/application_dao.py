@@ -9,13 +9,13 @@ class application_dao:
         status = "TO_DO"
         userId = self.__db.run_query("SELECT user_id FROM user WHERE email='"+email+"'")[0][0]
         
-        self.__db.run_query("CALL CreateCompany('"+company_name+"');")
+        self.__db.run_query("INSERT into company (company_name) values ('"+company_name+"');")
         companyId = self.__db.run_query("SELECT company_id FROM company WHERE company_name='"+company_name+"'")[0][0]
 
-        self.__db.run_query("CALL CreateRoles('"+job_profile+"');")
+        self.__db.run_query("INSERT INTO roles (role) values ('"+job_profile+"');")
         roleId = self.__db.run_query("SELECT role_id FROM roles WHERE role='"+job_profile+"'")[0][0]
 
-        return self.__db.run_query("CALL CreateApplication('"+userId+"','"+companyId+"','"+roleId+"', '"+date_applied+"', '"+job_profile+"', '"+salary+"', '"+location+"', '"+status+"');")
+        return self.__db.run_query("INSERT INTO application (user_id, company_id, role_id, application_date, job_description, salary, location, status) values ("+str(userId)+", "+str(companyId)+", "+str(roleId)+", "+date_applied+", '"+job_profile+"', "+str(salary)+", '"+location+"', '"+status+"');")
 
     def get_application(self):
         pass
