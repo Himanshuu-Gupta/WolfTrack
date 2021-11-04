@@ -16,11 +16,11 @@
 |.5|Use of code formatters. | [pylintrc](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/pylintrc)|.5|
 |.5|Use of style checkers | [pylintrc](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/pylintrc)|.5|
 |.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | [README.md](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/README.md) | .5
-|.5|test cases exist  | dozens of tests and those test cases are more than 30% of the code base|
+|.5|test cases exist  | dozens of tests and those test cases are more than 30% of the code base| .5
 |.5|Use of code coverage  | [Codecov](https://codecov.io/gh/ArpithaVijayakumar/WolfTrackPlus)|.5|
 |.5|other automated analysis tools  | [Github Actions](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/.github/workflows/main.yml)|.5|
 |.5|test cases:.a large proportion of the issues related to handling failing cases. | if a test case fails, open an issue and fix it| .5
-|.5|test cases are routinely executed | [Github Actions](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/.github/workflows/main.yml)|.5||
+|.5|test cases are routinely executed | [Github Actions](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/.github/workflows/main.yml)|.5|
 |1|Documentation describing how this version improves on the older version| [Project 2 Changes](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/docs/Project2Changes.md) | 1 |
 |3|This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment.| 3
-|16| Total| 16
+|16| Total| | 16
