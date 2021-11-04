@@ -17,8 +17,12 @@ class application_dao:
 
         return self.__db.run_query("INSERT INTO application (user_id, company_id, role_id, application_date, job_description, salary, location, status) values ("+str(userId)+", "+str(companyId)+", "+str(roleId)+", "+date_applied+", '"+job_profile+"', "+str(salary)+", '"+location+"', '"+status+"');")
 
-    def get_application(self):
-        pass
+    def get_application(self, email, application_status):
+        userId = self.__db.run_query("SELECT user_id FROM user WHERE email='"+email+"'")[0][0]
+        res = self.__db.run_query("SELECT company_name, status, application_date FROM application JOIN company ON company.company_id = application.company_id WHERE user_id="+str(userId))
+
+        print(res)
+        return res
 
     def update_application(self):
         pass
