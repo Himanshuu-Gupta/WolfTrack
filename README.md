@@ -1,12 +1,14 @@
 <h1 align= "center"><b>WolfTrack</b></h1>
 
+**Version 1 tags:**<br/>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![DOI](https://zenodo.org/badge/408669082.svg)](https://zenodo.org/badge/latestdoi/408669082)
 [![GitHub Release](https://img.shields.io/github/release/Himanshuu-Gupta/WolfTrack)](https://github.com/Himanshuu-Gupta/WolfTrack/releases/tag/wolftrack)
 [![Build Status](https://app.travis-ci.com/Himanshuu-Gupta/WolfTrack.svg?branch=main)](https://app.travis-ci.com/Himanshuu-Gupta/WolfTrack)
 
 **Version 2 tags:**<br/>
-<br/>
+
 [![DOI](https://zenodo.org/badge/418295938.svg)](https://zenodo.org/badge/latestdoi/418295938)
 [![GitHub Release](https://img.shields.io/github/release/ArpithaVijayakumar/WolfTrack)](https://github.com/ArpithaVijayakumar/WolfTrack/releases/tag/wolftrack)
 ![Python](https://img.shields.io/badge/python-v3.8+-yellow.svg)
