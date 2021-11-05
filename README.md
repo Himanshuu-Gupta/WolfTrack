@@ -15,7 +15,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/ArpithaVijayakumar/WolfTrack)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/ArpithaVijayakumar/WolfTrack)
 ![Lines of code](https://img.shields.io/tokei/lines/github/ArpithaVijayakumar/WolfTrack)
-
+[![Build Status](https://app.travis-ci.com/ArpithaVijayakumar/WolfTrackPlus.svg?branch=main)](https://app.travis-ci.com/ArpithaVijayakumar/WolfTrackPlus)
 **Goal:**
 
 One stop shop for your very own personal Job-tracker application!
