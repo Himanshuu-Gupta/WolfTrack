@@ -12,13 +12,6 @@ from main import app
 
 class FlaskTest(unittest.TestCase):
 
-    #check if response is 200
-    def test_index(self):
-        tester = app.test_client(self)
-        response = tester.get("/login")
-        statuscode = response.status_code
-        self.assertEqual(statuscode, 200)
-
     #check if content returned is application/json
     def test_index_content(self):
         tester = app.test_client(self)
