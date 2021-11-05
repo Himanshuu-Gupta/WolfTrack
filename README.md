@@ -158,7 +158,7 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 - [x] Add Error Handling mechanisms
 - [x] Mock of Job Application Map using Power BI
 
-### Future Enhancements:
+### Phase 2:
 
 - [x] Integrating Components to create a complete workflow
 - [x] Revamped database design following ACID properties
