@@ -45,7 +45,7 @@ class FlaskTest(unittest.TestCase):
 
     def test_repeated_signup(self):
         tester = app.test_client(self)
-        response = tester.post("/signup", data={"username": "test@gmail.com", "password": "password", "name": "test"})
+        response = tester.post("/signup", data={"username": "test@gmail.com", "password": "password", "name": "test", "gender": "Female", "location":"Raleigh"})
         self.assertEqual(response.status_code, 400)
 
     def test_new_application(self):

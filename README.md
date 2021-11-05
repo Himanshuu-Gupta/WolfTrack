@@ -158,14 +158,21 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 - [x] Add Error Handling mechanisms
 - [x] Mock of Job Application Map using Power BI
 
+### Phase 2:
+
+- [x] Integrating Components to create a complete workflow
+- [x] Revamped database design following ACID properties
+- [x] Added validations to user input for Login, Signup and Add Application 
+- [x] Added style checkers which were not existing before
+- [x] Made UI to be more reactive by enforcing the user to enter required fields
+- [x] Create APIs for relevant functionalities
+
 ### Future Enhancements:
 
-- [ ] Integrating Components to create a complete workflow
 - [ ] Embedding calendar and highligting important dates
 - [ ] Send remainder mails for deadlines
 - [ ] Upload and Maintain resume versions
 - [ ] Display the location of the application on the map
-- [ ] Create APIs for relevant functionalities
 - [ ] Share your profile with others
 - [ ] Reading mails from your inbox and automatically adding/updating the status of the application
 - [ ] Enabling Desktop Notifications
