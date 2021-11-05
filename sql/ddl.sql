@@ -36,6 +36,8 @@ CREATE TABLE IF NOT EXISTS `wolftrack`.`user` (
   `linkedin_link` VARCHAR(45) NULL,
   `github_link` VARCHAR(45) NULL,
   `profile_link` VARCHAR(45) NULL,
+  `gender` VARCHAR(45) NULL,
+  `location` VARCHAR(75) NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
   UNIQUE INDEX `first_name_UNIQUE` (`full_name` ASC) VISIBLE,
