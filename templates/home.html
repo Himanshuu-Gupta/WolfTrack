@@ -82,49 +82,50 @@
         </button>
       </div>
       <div class="modal-body" style="text-align: left;">
+        <form action="/add_new_application" method="POST" id="add-new-application">
         <div class="form-group">
           <label for="exampleInputName">Company Name</label>
-          <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Google"
+          <input type="text" name="companyName" class="form-control" id="exampleInputName" placeholder="Google"
             required="required">
         </div>
         <div class="form-group">
-          <label for="Location" required="required">Location</label>
-          <input type="text" name="text" class="form-control" id="Location" placeholder="Enter Location">
+          <label for="Location">Location</label>
+          <input type="text" name="location" class="form-control" id="Location" placeholder="Enter Location" required="required">
         </div>
         <div class="form-group">
           <label for="JobProfile">Job Profile</label>
-          <input type="text" name="text" class="form-control" id="JobProfile" placeholder="Enter Job Profile">
+          <input type="text" name="jobProfile" class="form-control" id="JobProfile" placeholder="Enter Job Profile" required="required">
         </div>
         <div class="form-group">
           <label for="Salary">Salary</label>
-          <input type="text" name="address" class="form-control" id="Salary" placeholder="Enter Salary">
+          <input type="text" name="salary" class="form-control" id="Salary" placeholder="Enter Salary" required="required">
         </div>
         <div class="form-group">
           <label for="Username">Username</label>
-          <input type="text" name="address" class="form-control" id="Username" placeholder="Enter Username">
+          <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username">
         </div>
         <div class="form-group">
           <label for="Password">Password</label>
-          <input type="text" name="address" class="form-control" id="Password" placeholder="Enter Password">
+          <input type="text" name="password" class="form-control" id="Password" placeholder="Enter Password">
         </div>
         <div class="form-group">
           <label for="SecurityQuestion">Security Question</label>
-          <input type="text" name="address" class="form-control" id="SecurityQuestion"
+          <input type="text" name="securityQuestion" class="form-control" id="SecurityQuestion"
             placeholder="Enter Security Question">
         </div>
         <div class="form-group">
           <label for="SecurityAnswer">Security Answer</label>
-          <input type="text" name="address" class="form-control" id="SecurityAnswer"
+          <input type="text" name="securityAnswer" class="form-control" id="SecurityAnswer"
             placeholder="Enter Security Answer">
         </div>
         <div class="form-group">
           <label for="Notes">Notes</label>
-          <textarea class="form-control" id="Notes" placeholder="Save links and other information here"></textarea>
+          <textarea class="form-control" id="Notes" name="notes" placeholder="Save links and other information here"></textarea>
         </div>
         <div class="form-group">
           <label for="example-date-input" class="col-3 col-form-label">Date Applied</label>
           <div class="col-10">
-            <input class="form-control" name="starting_date" type="date" value="2020-02-01" id="example-date-input">
+            <input class="form-control" name="dateApplied" type="date" value="2020-02-01" id="example-date-input">
           </div>
         </div>
         <div class="form-group mt-3">
@@ -134,9 +135,10 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Add</button>
+        <button type="submit" class="btn btn-primary">Add</button>
       </div>
     </div>
   </div>
 </div>
+</form>
 {% endblock content %}

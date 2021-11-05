@@ -12,16 +12,13 @@ class User(Resource):
         self.user = user_dao()
 
     #@login_required
-    def get(self):
-        self.user.get_user()
-        return make_response('Coming Soon!!')
-        # return make_response(render_template('home.html', data=data, upcoming_events=upcoming_events), 200, headers)
+    def get(self,email,password):
+        return self.user.get_user(email,password)
 
     #@login_required
-    def post(self):
-        self.user.create_user()
-        some_json=request.get_json()
-        return {'you sent': some_json}, 200
+    def post(self, name, email,password,gender,location):
+        return self.user.create_user(name,email,password,gender,location)
+        
 
     #@login_required
     def put(self):

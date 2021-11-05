@@ -1,4 +1,4 @@
-from flask.typing import StatusCode
+ from flask.typing import StatusCode
 
 import unittest
 import sys, os, inspect
@@ -13,7 +13,7 @@ from main import app
 class FlaskTest(unittest.TestCase):
 
     #check if response is 200
-    def test_index(self):
+    def test_(self):
         pass
     
     #check if content returned is application/json

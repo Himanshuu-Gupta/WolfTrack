@@ -1,12 +1,21 @@
 <h1 align= "center"><b>WolfTrack</b></h1>
 
+**Version 1 tags:**<br/>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![DOI](https://zenodo.org/badge/408669082.svg)](https://zenodo.org/badge/latestdoi/408669082)
 [![GitHub Release](https://img.shields.io/github/release/Himanshuu-Gupta/WolfTrack)](https://github.com/Himanshuu-Gupta/WolfTrack/releases/tag/wolftrack)
 [![Build Status](https://app.travis-ci.com/Himanshuu-Gupta/WolfTrack.svg?branch=main)](https://app.travis-ci.com/Himanshuu-Gupta/WolfTrack)
 
+**Version 2 tags:**<br/>
 
-
+[![DOI](https://zenodo.org/badge/418295938.svg)](https://zenodo.org/badge/latestdoi/418295938)
+[![GitHub Release](https://img.shields.io/github/release/ArpithaVijayakumar/WolfTrack)](https://github.com/ArpithaVijayakumar/WolfTrack/releases/tag/wolftrack)
+![Python](https://img.shields.io/badge/python-v3.8+-yellow.svg)
+![GitHub issues](https://img.shields.io/github/issues/ArpithaVijayakumar/WolfTrack)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/ArpithaVijayakumar/WolfTrack)
+![Lines of code](https://img.shields.io/tokei/lines/github/ArpithaVijayakumar/WolfTrack)
+[![Build Status](https://app.travis-ci.com/ArpithaVijayakumar/WolfTrackPlus.svg?branch=main)](https://app.travis-ci.com/ArpithaVijayakumar/WolfTrackPlus)
 **Goal:**
 
 One stop shop for your very own personal Job-tracker application!
@@ -149,14 +158,21 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 - [x] Add Error Handling mechanisms
 - [x] Mock of Job Application Map using Power BI
 
+### Phase 2:
+
+- [x] Integrating Components to create a complete workflow
+- [x] Revamped database design following ACID properties
+- [x] Added validations to user input for Login, Signup and Add Application 
+- [x] Added style checkers which were not existing before
+- [x] Made UI to be more reactive by enforcing the user to enter required fields
+- [x] Create APIs for relevant functionalities
+
 ### Future Enhancements:
 
-- [ ] Integrating Components to create a complete workflow
 - [ ] Embedding calendar and highligting important dates
 - [ ] Send remainder mails for deadlines
 - [ ] Upload and Maintain resume versions
 - [ ] Display the location of the application on the map
-- [ ] Create APIs for relevant functionalities
 - [ ] Share your profile with others
 - [ ] Reading mails from your inbox and automatically adding/updating the status of the application
 - [ ] Enabling Desktop Notifications
@@ -164,8 +180,18 @@ https://user-images.githubusercontent.com/18304940/135203686-c480c101-7aa5-40ca-
 ## Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/WolfTrack/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
-## Contributors 👨‍🏭
-
+## Contributors
+<center>
+  <table>
+    <tr>
+        <td align="center"><a href="https://github.com/apurva-s"><img src="https://avatars.githubusercontent.com/u/32777604?v=4" width="100px;" alt=""/><br /><sub><b>Apurva Sonavane</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/ArpithaVijayakumar/"><img src="https://avatars.githubusercontent.com/u/45428701?s=400&u=15851f4800b87dcd2b8cbf9ff0a040bc8987e7c0&v=4" width="100px;" alt=""/><br /><sub><b>Arpitha Vijayakumar</b></sub></a></td>
+    <td align="center"><a href="https://github.com/ivbhatt"><img src="https://avatars.githubusercontent.com/u/20361038?v=4" width="100px;" alt=""/><br /><sub><b>Ishan Bhatt</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Krishika510"><img src="https://avatars.githubusercontent.com/u/17769434?v=4" width="100px;" alt=""/><br /><sub><b>Krishika Shivnani</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/UnnatiPrema/"><img src="https://avatars.githubusercontent.com/u/24750759?s=400&u=ab27d86edc758ff53bd68808430d8e5bf172e34a&v=4" width="100px;" alt=""/><br /><sub><b>Unnati Nadupalli</b></sub></a><br /></td>
+    </tr>
+  </table>
+</center>
 <table>
   <tr>
     <td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
@@ -178,5 +204,5 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/WolfTra
 
 
 ## Contact 
-In case of any issues, please mail your queries to wolftrackse@gmail.com 
+In case of any issues, please e-mail your queries to wolftrackse@gmail.com or raise an issue on this repository
 
