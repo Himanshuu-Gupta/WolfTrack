@@ -78,6 +78,7 @@ def signup():
     session['email'] = request.form["email"]
     password = request.form["password"]
     result = user.post(name,session['email'],password)
+    print(name)
     if(result == 0):
         error = "This email already exists. Please try with different email"
         return render_template('login.html', emailError=error)

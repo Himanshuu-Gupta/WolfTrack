@@ -43,6 +43,18 @@ class FlaskTest(unittest.TestCase):
         response = tester.post("/loginUser", data={"username": "test@gmail.com", "password": "password"})
         self.assertEqual(response.status_code, 200)
 
+    def test_repeated_signup(self):
+        tester = app.test_client(self)
+        response = tester.post("/signup", data={"username": "test@gmail.com", "password": "password", "name": "test"})
+        self.assertEqual(response.status_code, 400)
+
+    def test_new_application(self):
+        with app.test_client(self) as c:
+            with c.session_transaction() as sess:
+                sess["email"] = "test@gmail.com"
+                sess["password"] = "password"
+        response = c.post("/add_new_application", data={"companyName" : "ANB", "location":"Seattle", "jobProfile": "Software Engineer", "salary":80000, "securityQuestion":"What is the name of your first dog?", "securityAnswer":"Tommy", "dateApplied" : "2021-02-01", "notes":"Check back in 2 weeks", "username": "abc@adobe.com", "password": "password1"})
+        self.assertEqual(response.status_code, 200)
 
 if __name__=="__main__":
      unittest.main()
