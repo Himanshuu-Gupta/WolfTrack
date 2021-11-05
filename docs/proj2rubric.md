@@ -21,6 +21,6 @@
 |.5|other automated analysis tools  | [Github Actions](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/.github/workflows/main.yml)|.5|
 |.5|test cases:.a large proportion of the issues related to handling failing cases. | if a test case fails, open an issue and fix it| .5
 |.5|test cases are routinely executed | [Github Actions](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/.github/workflows/main.yml)|.5|
-|1|Documentation describing how this version improves on the older version| [Project 2 Changes](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/docs/Project2Changes.md) | 1 |
+|1|Documentation describing how this version improves on the older version| [Project 2 Changes](https://github.com/ArpithaVijayakumar/WolfTrackPlus/blob/main/docs/Changes.md) | 1 |
 |3|This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment.| 3
 |16| Total| | 16
