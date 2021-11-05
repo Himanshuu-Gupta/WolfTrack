@@ -9,7 +9,7 @@ from Controller.home import home_route
 
 app = Flask(__name__)
 api = Api(app)
-
+app.config['SECRET_KEY'] = 'Sample' #os.environ.get('SECRET_KEY')
 api.add_resource(User, '/user')
 api.add_resource(Activity, '/activity')
 api.add_resource(Profile, '/profile')
@@ -20,6 +20,5 @@ app.app_context().push()
 
 
 if __name__ == '__main__':
-    app.config['SECRET_KEY'] = 'Sample' #os.environ.get('SECRET_KEY')
-    app.app_context().push()
+
     app.run(debug=True)

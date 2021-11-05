@@ -23,13 +23,26 @@ class FlaskTest(unittest.TestCase):
     def test_index_content(self):
         tester = app.test_client(self)
         response = tester.get("/login")
-        self.assertEqual(response.content_type, "text/html")
+        self.assertEqual(response.content_type, "text/html; charset=utf-8")
 
     #check data returned
-    def test_index_data(self):
+    def test_valid_email(self):
         tester = app.test_client(self)
-        response = tester.get("/login")
-        self.assertEqual(b'WolfTrack' in response.data, True)
+        response = tester.post("/loginUser",data = {"username":"wrongformat.com","password":"password"})
+        print(response)
+        self.assertEqual(response.status_code, 200)
+
+    def test_validate_credentials(self):
+        tester = app.test_client(self)
+        response = tester.post("/loginUser",data = {"username":"test@gmail.com","password":"pasword"})
+        print(response)
+        self.assertEqual(response.status_code, 200)
+
+    def test_validate_credentials(self):
+        tester = app.test_client(self)
+        response = tester.post("/loginUser", data={"username": "test@gmail.com", "password": "password"})
+        self.assertEqual(response.status_code, 200)
+
 
 if __name__=="__main__":
      unittest.main()
