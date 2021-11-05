@@ -16,8 +16,8 @@ class User(Resource):
         return self.user.get_user(email,password)
 
     #@login_required
-    def post(self, name, email,password):
-        return self.user.create_user(name,email,password)
+    def post(self, name, email,password,gender,location):
+        return self.user.create_user(name,email,password,gender,location)
         
 
     #@login_required
